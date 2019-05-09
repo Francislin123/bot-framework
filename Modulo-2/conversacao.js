@@ -4,8 +4,8 @@ const connector = new builder.ConsoleConnector().listen();
 
 const bot = new builder.UniversalBot(connector);
 
-bot.dialog('/',[
-    
+bot.dialog('/', [
+
     (session) => {
         builder.Prompts.text(session, 'Oi tudo bem?');
     },
