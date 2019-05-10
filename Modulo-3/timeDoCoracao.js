@@ -48,6 +48,6 @@ bot.dialog('/perguntarLugarPreferido', [
 
     (session, results) => {
         let place = results.response;
-        session.endDialog(`We love the ${place}! It is simply a very beautiful city!`);
+        session.endDialog(`We love the **${place}**! It is simply a very beautiful city!`);
     }
 ]);
